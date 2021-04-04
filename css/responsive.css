@@ -31,9 +31,11 @@
     }
     .text-big {
         text-align: center;
+        font-size: 30px;
     }
     .text-small {
         text-align: center;
+        font-size: 17px;
     }
     .buttons {
         text-align: center;
@@ -43,5 +45,16 @@
     }
     .paras {
         padding: 0px;
+    }
+    .text-big-pages {
+        font-size: 30px;
+        margin: 20px;
+    }
+    .text-small-pages {
+        font-size: 17px;
+        padding: 20px 0px;
+    }
+    .category {
+        font-size: 16px;
     }
 }
