@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Cyber Mate</title>
+</head>
+
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="logo.png" alt="logo"></div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="topics.html">Topics</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="section" id="about">
+        <div class="paras">
+            <p class="sectionTag text-big-pages">11 penetration testing tools the pros use
+
+            </p>
+            <p class="sectionsubTag text-small-pages">Back in ye olde days of yore, hacking was hard and required a lot of manual bit fiddling. Today, though, a full suite of automated testing tools turn hackers into cyborgs, computer-enhanced humans who can test far more than ever before. Why
+                use a horse and buggy to cross the country when you can fly in a jet plane? Here's a list of the supersonic tools that make a modern pentester's job faster, better, and smarter.</p>
+            <p class="sectionsubTag text-big-pages">1. Kali Linux</p>
+            <p class="sectionsubTag text-small-pages">If you're not using Kali as your base pentesting operating system, you either have bleeding-edge knowledge and a specialized use case or you're doing it wrong. Formerly known as BackTrack Linux and maintained by the good folks at Offensive
+                Security (OffSec, the same folks who run the OSCP certification), Kali is optimized in every way for offensive use as a penetration tester.
+            </p>
+            <p class="sectionsubTag text-small-pages">While you can run Kali on its own hardware, it's far more common to see pentesters using Kali virtual machines on OS X or Windows.
+            </p>
+            <p class="sectionsubTag text-small-pages">Kali ships with most of the tools mentioned here and is the default pentesting operating system for most use cases. Be warned, though--Kali is optimized for offense, not defense, and is easily exploited in turn. Don't keep your super-duper
+                extra secret files in your Kali VM.
+            </p>
+            <p class="sectionsubTag text-big-pages">2. nmap</p>
+            <p class="sectionsubTag text-small-pages">The granddaddy of port scanners, nmap--short for network mapper--is a tried-and-true pen testing tool few can live without. What ports are open? What's running on those ports? This is indispensable information for the pentester during recon
+                phase, and nmap is often the best tool for the job.</p>
+            <p class="sectionsubTag text-small-pages">Despite the occasional hysteria from a non-technical C-suite exec that some unknown party is port scanning the enterprise, nmap by itself is completely legal to use, and is akin to knocking on the front door of everyone in the neighborhood
+                to see if someone is home.</p>
+            <p class="sectionsubTag text-small-pages">Many legitimate organizations such as insurance agencies, internet cartographers like Shodan and Censys, and risk scorers like BitSight scan the entire IPv4 range regularly with specialized port-scanning software (usually nmap competitors
+                masscan or zmap) to map the public security posture of enterprises both large and small. That said, attackers who mean malice also port scan, so it's something to log for future reference.</p>
+            <p class="sectionsubTag text-big-pages">3. Metasploit</p>
+            <p class="sectionsubTag text-small-pages">Why exploit when you can meta-sploit? This appropriately named meta-software is like a crossbow: Aim at your target, pick your exploit, select a payload, and fire. Indispensable for most pentesters, metasploit automates vast amounts of previously
+                tedious effort and is truly "the world's most used penetration testing framework," as its website trumpets. An open-source project with commercial support from Rapid7, Metasploit is a must-have for defenders to secure their systems from
+                attackers.
+            </p>
+            <p class="sectionsubTag text-big-pages">4. Wireshark</p>
+            <p class="sectionsubTag text-small-pages">Wireshark doo doo doo doo doo doo... now that we've hacked your brain to hum that tune (see how easy that engagement was?), this network protocol analyzer will be more memorable. Wireshark is the ubiquitous tool to understand the traffic passing
+                across your network. While commonly used to drill down into your everyday TCP/IP connection issues, Wireshark supports analysis of hundreds of protocols including real-time analysis and decryption support for many of those protocols. If
+                you're new to pentesting, Wireshark is a must-learn tool.</p>
+            <p class="sectionsubTag text-big-pages">5. John the Ripper</p>
+            <p class="sectionsubTag text-small-pages">Unlike the software's namesake, John doesn't serially kill people in Victorian London, but instead will happily crack encryption as fast as your GPU can go. This password cracker is open-source and is meant for offline password cracking. John
+                can use a word list of likely passwords and mutate them to replace “a” with “@” and “s” with “5” and so forth, or it can run for an infinity with muscular hardware until a password is found. Considering that the vast majority of people
+                use short passwords of little complexity, John is frequently successful at breaking encryption.</p>
+            <p class="sectionsubTag text-big-pages">6. Hashcat</p>
+            <p class="sectionsubTag text-small-pages">The self-proclaimed "world's fastest and most advanced password recovery utility" may not be modest, but the hashcat folks certainly know their worth. Hashcat gives John the Ripper a run for its money. It is the go-to pentesting tool to crack
+                hashes, and hashcat supports many kinds of password-guessing brute force attacks, including dictionary and mask attacks.</p>
+            <p class="sectionsubTag text-small-pages">Pentesting commonly involves exfiltration of hashed passwords, and exploiting those credentials means turning a program like hashcat loose on them offline in the hope of guessing or brute-forcing at least some of those passwords.</p>
+            <p class="sectionsubTag text-small-pages">Hashcat runs best on a modern GPU (sorry, Kali VM users). Legacy hashcat still supports hash cracking on the CPU, but warns users it is significantly slower than harnessing your graphics card's processing power.</p>
+            <p class="sectionsubTag text-big-pages">7. Hydra</p>
+            <p class="sectionsubTag text-small-pages">John the Ripper's companion, Hydra, comes into play when you need to crack a password online, such as an SSH or FTP login, IMAP, IRC, RDP and many more. Point Hydra at the service you want to crack, pass it a word list if you like, and pull
+                the trigger. Tools like Hydra are a reminder why rate-limiting password attempts and disconnecting users after a handful of login attempts can be successful defensive mitigations against attackers.</p>
+            <p class="sectionsubTag text-big-pages">8. Burp Suite</p>
+            <p class="sectionsubTag text-small-pages">No discussion of pentesting tools is complete without mentioning web vulnerability scanner Burp Suite, which, unlike other tools mentioned so far, is neither free nor libre, but an expensive tool used by the pros. While there is a Burp Suite
+                community edition, it lacks much of the functionality, and the Burp Suite enterprise edition goes for a cool $3,999 a year (that psychological pricing doesn't make it seem that much cheaper, guys).</p>
+            <p class="sectionsubTag text-small-pages">There's a reason they can get away with those kind of nosebleed prices, though. Burp Suite is an incredibly effective web vulnerability scanner. Point it at the web property you want to test, and fire when ready. Burp competitor Nessus offers
+                a similarly effective (and similarly priced) product.</p>
+            <p class="sectionsubTag text-big-pages">9. Zed Attack Proxy</p>
+            <p class="sectionsubTag text-small-pages">Those without the cash to pay for a copy of Burp Suite will find OWASP's Zed Attack Proxy (ZAP) to be almost as effective, and it is both free and libre software. Like the name suggests, ZAP sits between your browser and the website you're
+                testing and allows you to intercept (aka man in the middle) the traffic to inspect and modify. It lacks many of Burp's bells and whistles, but its open-source license makes it easier and cheaper to deploy at scale, and it makes a fine
+                beginner's tool to learn how vulnerable web traffic really is. ZAP competitor Nikto offers a similar open-source tool.</p>
+            <p class="sectionsubTag text-big-pages">10. sqlmap</p>
+            <p class="sectionsubTag text-small-pages">Did somebody say SQL injection? Well hello, sqlmap. This incredibly effective SQL injection tool is open-source and "automates the process of detecting and exploiting SQL injection flaws and taking over of database servers," just like its
+                website says. Sqlmap supports all the usual targets, including MySQL, Oracle, PostgreSQL, Microsoft SQL Server, Microsoft Access, IBM DB2, SQLite, Firebird, Sybase, SAP MaxDB, Informix, HSQLDB and H2. Old-timers used to have to craft their
+                SQL injection with a hot needle to their hard drive. These days sqlmap will take the squinty-eyed work out of your pentesting gig.</p>
+            <p class="sectionsubTag text-big-pages">11. aircrack-ng</p>
+            <p class="sectionsubTag text-small-pages">Just how secure is your client's wifi--or your home wifi? Find out with aircrack-ng. This wifi security auditing tool is free/libre, but the Pringles can you'll have to acquire on your own. (We hear the darknet market at 7-11 can give you
+                one on the down low.) Cracking wifi today is often possible because of poor configuration, bad passwords, or outdated encryption protocols. Aircrack-ng is the go-to choice for many--with or without a Pringles "cantenna".</p>
+
+
+            <p class="sectionsubTag text-small-pages"></p>
+            <p class="sectionsubTag text-small-pages"></p>
+            <p class="sectionsubTag text-small-pages"></p>
+
+
+        </div>
+        <div class="thumbnail-pages">
+            <img src="https://source.unsplash.com/900x900/?computer,cyber attack" alt="logo image" class="imgFluid">
+        </div>
+
+    </section>
+    <section class="section">
+        <div class="buttons">
+            <a href="page9.html" class="btn-pages">Prev</button></a>
+            <a href="page11.html" class="btn-pages">Next</button></a>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <footer class="background">
+        <p class="text-footer-pages">
+            Copyright &copy; 2021 www.cybermate.live - All rights reserved
+        </p>
+    </footer>
+    <script src="js/resp.js"></script>
+</body>
+
+</html>
