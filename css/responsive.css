@@ -1,60 +1,63 @@
-@media only screen and (max-width:1140px) {
-    .nav-list {
-        flex-direction: column;
-    }
-    .navbar {
-        flex-direction: column;
-        transition: all 0.1s ease-out;
-        height: 447px;
-    }
-    .rightNav {
-        text-align: center;
-    }
-    .box-main {
-        flex-direction: column-reverse;
-        max-width: 100%;
-    }
-    #search {
-        width: 100%;
-    }
-    .burger {
-        display: block;
-    }
-    .h-nav-resp {
-        height: 72px;
-    }
-    .v-class-resp {
-        opacity: 0;
-    }
-    .section {
-        flex-direction: column-reverse;
-    }
-    .text-big {
-        text-align: center;
-        font-size: 30px;
-    }
-    .text-small {
-        text-align: center;
-        font-size: 17px;
-    }
-    .buttons {
-        text-align: center;
-    }
-    .secondHalf img {
-        width: 30%;
-    }
-    .paras {
-        padding: 0px;
-    }
-    .text-big-pages {
-        font-size: 30px;
-        margin: 20px;
-    }
-    .text-small-pages {
-        font-size: 17px;
-        padding: 20px 0px;
-    }
-    .category {
-        font-size: 16px;
-    }
-}
+            @media only screen and (max-width:1140px) {
+            .nav-list {
+                flex-direction: column;
+            }
+            .navbar {
+                flex-direction: column;
+                transition: all 0.1s ease-out;
+                height: 447px;
+            }
+            .rightNav {
+                text-align: center;
+            }
+            .box-main {
+                flex-direction: column-reverse;
+                max-width: 100%;
+            }
+            #search {
+                width: 100%;
+            }
+            .burger {
+                display: block;
+            }
+            .h-nav-resp {
+                height: 72px;
+            }
+            .v-class-resp {
+                opacity: 0;
+            }
+            .section {
+                flex-direction: column-reverse;
+            }
+            .text-big {
+                text-align: center;
+                font-size: 30px;
+            }
+            .text-small {
+                text-align: center;
+                font-size: 17px;
+            }
+            .buttons {
+                text-align: center;
+            }
+            .secondHalf img {
+                width: 30%;
+            }
+            .paras {
+                padding: 0px;
+            }
+            .text-big-pages {
+                font-size: 30px;
+                margin: 20px;
+            }
+            .text-small-pages {
+                font-size: 17px;
+                padding: 20px 0px;
+            }
+            .category {
+                font-size: 16px;
+            }
+            .text-small-pages-img-size img {
+                width: 275px;
+                height: 150px;
+            }
