@@ -68,13 +68,13 @@ html {
 }
 
 .background {
-    background: rgba(0, 0, 0, 0.6) url('../hacker2.jpg');
+    background: rgba(0, 0, 0, 0.6) url('../images/uploads/hacker2.jpg');
     background-size: cover;
     background-blend-mode: darken;
 }
 
 .background-contact {
-    background: rgba(0, 0, 0, 0.6) url('../hacker3.jpg');
+    background: rgba(0, 0, 0, 0.6) url('../images/uploads/hacker3.jpg');
     background-size: cover;
     background-blend-mode: darken;
 }
